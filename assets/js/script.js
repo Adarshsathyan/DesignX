@@ -87,3 +87,12 @@ $(function() {
     });
     
 });
+function emailsen(){
+    var name=document.getElementById('name').value
+    var email=document.getElementById('email').value
+    var message=document.getElementById('message').value
+     var link="mailto:adarshsathyan2000@gmail.com" +"?cc=" +email +"&subject="+ escape("Web Project") +"&body=" +message;
+     window.location.href=link;
+
+    
+}
